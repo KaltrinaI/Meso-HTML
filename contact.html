@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kontakt</title>
+		<style type="text/css">
+			td
+		</style>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<header id="header1">
+			<div id="logo">
+				<svg id="svglogo">
+					<path fill="#00c7ff" style="fill: var(--color1, #00c7ff)" d="M100 50c0 27.614-22.386 50-50 50s-50-22.386-50-50c0-27.614 22.386-50 50-50s50 22.386 50 50z"></path>
+					<path fill="#0093c4" style="fill: var(--color2, #0093c4)" d="M100 50c0-0.007-0-0.014-0-0.021l-23.412-23.413-56.958 46.868 26.41 26.41c1.307 0.103 2.628 0.156 3.961 0.156 27.614 0 50-22.386 50-50z"></path>
+					<path fill="#9abadb" style="fill: var(--color3, #9abadb)" d="M76.587 26.566h-26.587l-2.375 41.675 28.962-2.375z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M23.413 26.566v39.3l26.587 2.375v-41.675z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M80.371 65.866h-30.371l-2.375 3.784 2.375 3.784h30.371z"></path>
+					<path fill="#f5f5ff" style="fill: var(--color5, #f5f5ff)" d="M19.629 65.867h30.371v7.568h-30.371v-7.568z"></path>
+					<path fill="#294b6e" style="fill: var(--color6, #294b6e)" d="M73.028 30.125h-23.028l-2.375 16.091 2.375 16.091h23.028z"></path>
+					<path fill="#6283a3" style="fill: var(--color7, #6283a3)" d="M26.973 30.125h23.027v32.182h-23.027v-32.182z"></path>
+					<path fill="#f5f5ff" style="fill: var(--color5, #f5f5ff)" d="M40.845 55.645l-9.429-9.429 9.429-9.429 2.517 2.517-6.912 6.912 6.912 6.912z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M59.155 55.645l-2.517-2.517 6.912-6.912-6.912-6.912 2.517-2.517 9.429 9.429z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M49.55 57.598l-3.491-0.694 4.389-22.065 3.491 0.694-4.389 22.065z"></path>
+				</svg>
+				<a href="projekti.html"><h1 id="emri">Web-design</h1></a>
+			</div>
+			<div id="menu">
+				<nav id="navigim">
+					<ul>
+						<li><a href="html5/html5.html">HTML5</a></li>
+						<li><a href="css/css.html">CSS</a></li>
+						<li><a href="Javascript/javas.html">JavaScript</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<hr>
+		<h1>Shpërndani eksperiencën tuaj me ne</h1>
+		<p>Për çdo paqartësi apo sugjerim mos nguroni të na shënoni!</p>
+			<form method="POST" action="https://w3shqip.000webhostapp.com/submit-question.php">
+			<fieldset>
+				<table>
+					<tr>
+					<td><label>Emri:</label></td> 
+					<td><input type="text" name="emri"></td>
+					</tr>
+					
+					<tr>
+					<td><label>Mbiemri :</label></td> 
+					<td><input type="text" name="mbiemri"></td>
+					</tr>
+					<tr>
+					<td><label>e-mail:</label></td> 
+					<td><input type="email" name="email"></td>
+					</tr>
+
+					<tr>
+					<td ><label>Prej 1 deri 10, sa të kënaqur jeni!</label></td> 
+					<td ><input type="range" name="nota" min="1" max="10"></td>
+					</tr>
+
+					<tr>
+						<td ><label>Paqartësi/Sygjerime</label></td>
+						<td><textarea name="komenti" rows="25" cols="50" maxlength="800" placeholder="Mendimet e juaja..."></textarea></td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> <button type="submit" id="butoni"> Dërgo!</button></td>
+					</tr>
+				</table>
+				
+			</fieldset>
+		</form>
+
+
+
+	</body>
+</html>

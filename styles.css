@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body{
+	font-family:'Montserrat', sans-serif;
+	font-size: 14pt;
+	margin: 5em;
+	background-image: linear-gradient(50deg,red, pink, #a3c9f7,#a3c9f7, #a3c9f7, pink, red);
+	background-size:100% 100%;
+	line-height: 30px;
+}
+
+#logo{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		justify-content: center;	
+}
+
+#header1{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+nav ul li a{
+	display: block;
+	border:1px solid;
+	border-radius: .5em;
+	padding: .5em 1em;
+	margin: .5em;
+	}
+#navigim ul li{
+	list-style-type: none;
+	color: #081421;
+	text-align: center;
+}
+
+#navigim ul {
+	display: grid;
+	grid-template-columns:2fr 2fr 2fr;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	padding-bottom: .2em;
+}
+a:link, a:visited { color: #6a7075 }
+a:focus, a:hover, a:active { color: #ffffff }
+
+#logo a{
+	border:none;
+}
+a:link #emri, a:visited #emri { color: #014b61 }
+a:focus #emri, a:hover #emri, a:active #emri { color: #ffffff}
+
+@media only screen and (max-width: 1100px) {
+				body{
+					font-size: 10pt;
+					height: auto;
+					margin: 0.5em;
+				}
+
+				.korniza{
+					display: none;
+					border:solid 3px #f7e4d5;
+					margin: 2px;
+					padding: 25px;
+					padding-bottom: 100px;
+				}
+
+				.kodi{
+					width:65%;
+					box-sizing: content-box;
+					border-left: solid 4px #060075;
+					background-color:#ecebff;
+					padding: 1.5em;
+				}
+				.element{
+					width:65%;
+					box-sizing: content-box;
+					border-left: solid 4px #060075;
+					background-color:#ecebff;
+					padding: 1.5em;
+				}
+
+				pre{
+					width: 70vw;
+					overflow: scroll;
+				}
+
+				dl dt{
+					width: 70vw;
+					padding-top: 1.5em;
+					padding-bottom: 1.5em;
+					padding-left: 1.5em;
+
+				}
+
+				#logo{
+					width: 100vw;
+					display: inline-block;
+				}
+
+				#header1{
+					display: block;
+					clear: both;
+				}
+
+				#navigim ul
+				{
+					display: block;
+					clear: both;
+				}
+
+				#div2{
+					display: block;
+				}
+
+				#permbajtja{
+					display: block;
+					min-width: 200px;
+					width: auto;
+					overflow-x: scroll;
+					clear: both;
+				}
+
+				 main{
+					display: block;
+					min-width: 200px;
+					width: auto;
+					overflow-x: scroll;
+					clear: both;
+				}
+
+				 aside{
+				 	margin: 10px;
+					padding: 25px;
+					display: block;
+					min-width: 200px;
+					width: auto;
+					overflow-x: scroll;
+					clear: both;
+				}
+				iframe{
+					width: 250px;
+					height: 250px;
+				}
+				video{
+					width: 250px;
+					height: 250px;
+				}
+				footer a{
+					font-size: 10pt;
+				}
+
+				#formatimigradiantit img{
+					width: 250px;
+					height: 250px;
+				}
+
+				#Formatimiimazheve img{
+					width: 300px;
+					height: 250px;
+				}
+				#box img{
+					width: 300px;
+					height: 250px;
+				}
+
+				#border img{
+					width:300px;
+					height:250px;
+				}
+
+				#dom img{
+					width:350px;
+					height:250px;
+				}
+				td pre{
+					width: 50vw;
+					overflow: scroll;
+
+				}
+				form{
+					margin-left: 100px;
+					width: 70vw;
+					overflow: scroll;
+				}
+			}

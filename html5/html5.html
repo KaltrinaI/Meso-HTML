@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Html5</title>
+		<style type="text/css">
+			table,td,th {
+				border: 1px solid #014b61;
+				background-color: #ecebff;
+			}
+			table{
+				border: 3px solid #060075;
+			}
+
+			#tabela table,td,th {
+				border: 1px solid gray;
+			}
+			iframe{
+				width:560px;
+				height:315px;
+			}
+		</style>
+		
+		<link rel="stylesheet" type="text/css" href="../styles1.css">
+		<link rel="stylesheet" type="text/css" href="../background.css">
+		<link rel="stylesheet" type="text/css" href="../styles.css">
+		
+	</head>
+	
+	<body>
+
+
+			<header id="header1">
+			<div id="logo">
+				<svg id="svglogo">
+					<path fill="#00c7ff" style="fill: var(--color1, #00c7ff)" d="M100 50c0 27.614-22.386 50-50 50s-50-22.386-50-50c0-27.614 22.386-50 50-50s50 22.386 50 50z"></path>
+					<path fill="#0093c4" style="fill: var(--color2, #0093c4)" d="M100 50c0-0.007-0-0.014-0-0.021l-23.412-23.413-56.958 46.868 26.41 26.41c1.307 0.103 2.628 0.156 3.961 0.156 27.614 0 50-22.386 50-50z"></path>
+					<path fill="#9abadb" style="fill: var(--color3, #9abadb)" d="M76.587 26.566h-26.587l-2.375 41.675 28.962-2.375z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M23.413 26.566v39.3l26.587 2.375v-41.675z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M80.371 65.866h-30.371l-2.375 3.784 2.375 3.784h30.371z"></path>
+					<path fill="#f5f5ff" style="fill: var(--color5, #f5f5ff)" d="M19.629 65.867h30.371v7.568h-30.371v-7.568z"></path>
+					<path fill="#294b6e" style="fill: var(--color6, #294b6e)" d="M73.028 30.125h-23.028l-2.375 16.091 2.375 16.091h23.028z"></path>
+					<path fill="#6283a3" style="fill: var(--color7, #6283a3)" d="M26.973 30.125h23.027v32.182h-23.027v-32.182z"></path>
+					<path fill="#f5f5ff" style="fill: var(--color5, #f5f5ff)" d="M40.845 55.645l-9.429-9.429 9.429-9.429 2.517 2.517-6.912 6.912 6.912 6.912z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M59.155 55.645l-2.517-2.517 6.912-6.912-6.912-6.912 2.517-2.517 9.429 9.429z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M49.55 57.598l-3.491-0.694 4.389-22.065 3.491 0.694-4.389 22.065z"></path>
+				</svg>
+				<a href="../projekti.html"><h1 id="emri">Web-design</h1></a>
+			</div>
+			<div id="menu">
+				<nav id="navigim">
+					<ul>
+						<li><a href="html5.html">HTML5</a></li>
+						<li><a href="../css/css.html">CSS</a></li>
+						<li><a href="../JavaScript/javas.html">JavaScript</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<hr>
+		<h1 onclick="display('hyrjeneHtml5')">Hyrje në HTML5</h1>
+		<div id="hyrjeneHtml5" class="korniza">
+			<h2>Struktura bazë e një elementi në HTML5</h2>
+			<table>
+				<tr>
+					<td rowspan="6"><pre>  
+&lt;!DOCTYPE html &gt;
+ &lt;html&gt;
+	 &lt;head&gt;
+		 &lt;meta charset="utf-8"&gt;
+		 &lt;title&gt;Titulli &lt;/title&gt;
+	 &lt;/head&gt;
+	 &lt;body&gt;
+		Përmbajtja e faqes
+	 &lt;/body&gt;
+ &lt;/html&gt; </pre></td>
+					<td>!DOCTYPE html tregon deklarimin e llojit të dokumentit, e cila mundëson që shfletuesit të identifikojnë se cili version i HTML përdoret, deklarimi që është përdorur këtu identifikon dokumentet të shkruara në HTML5</td>
+				</tr>
+				<tr>
+					<td>Elementi html ndryshe quhet edhe elementi rrënjë, dhe i përmban të gjithë elementet tjera</td>
+				</tr>
+				<tr>
+					<td>Elementi head i përmban elementet që nuk shfaqen si pjesë e përmbajtjes, siç është titulli, stilet, skripta dhe metadata</td>
+				</tr>
+				<tr>
+					<td>Meta elementi tregon metadatat e dokumentit, informacione në lidhje me dokumentin, në këtë rast specifikon kodimin e karaktereve (një koleksion i standardizuar i shkronjave, numrave dhe simboleve) të përdorura në dokument.</td>
+				</tr>
+				<tr>
+					<td>Në head, kemi edhe elementin title që e përmban emrin e webfaqes </td>
+				</tr>
+				<tr>
+					<td>Elementi body përmban gjithçka që ne duam të shfaqim tek webfaqja jonë</td>
+				</tr>
+			</table>
+
+			<h2>Anatomia e një elementi HTML</h2>
+			<dl>
+				<dt>&lt;elementname&gt; Përmbajtja &lt;/elementname&gt; </dt>
+				<dd> </dd>
+			</dl>
+
+			<h2>Elementet që përdoren për shkruarjen e përmbajtjes së faqes në HTML5</h2>
+			<h4>Elementet e bllokut (elementet që pas përdorimit të nxjerrin në rresht të ri)</h4>
+			<dl>
+				<dt>&lt;h1&gt;...&lt;/h1&gt; --- &lt;h6&gt;...&lt;/h6&gt; </dt>
+				<dd>Elemente për definimin e titujve dhe nëntitujve</dd>
+				<dt>&lt;p&gt;....&lt;/p&gt;</dt>
+				<dd>Element për definimin e paragrafit</dd>
+				<dt>&lt;hr&gt;</dt>
+				<dd>Sintaksa e një vije horizontale</dd>
+				<dt>&lt;ul&gt;....&lt;/ul&gt;</dt>
+				<dd>Listë e parenditur, ku të dhënat brenda listës shënohen me tagun &lt;li&gt;...&lt;/li&gt;</dd>
+				<dt>&lt;ol&gt;....&lt;/ol&gt;</dt>
+				<dd>Listë e renditur, edhe këtu të dhënat shënohen brenda tagut &lt;li&gt;...&lt;/li&gt;</dd>
+				<dt>&lt;dl&gt;....&lt;/dl&gt;</dt>
+				<dd>Listë e përshkrimeve, ku me anë të tagut &lt;dt&gt;....&lt;/dt&gt; shënohet termi, ndërsa te tagu &lt;dd&gt;....&lt;/dd&gt; sqarimi i termit</dd>
+				<dt>&lt;blockquote&gt;....&lt;/blockquote&gt;</dt>
+				<dd>Definimi i citateve të gjata</dd>
+				<dt>&lt;pre&gt;....&lt;/pre&gt;</dt>
+				<dd>Element ku përmbajtja që shënohet brenda këtij elementi na paraqitet në ekran ashtu siç e kemi shënuar (tekst i paraformuar)</dd>
+				<dt>&lt;main&gt;....&lt;/main&gt;</dt>
+				<dd>Definimi i pjesës kryesore në webfaqe</dd>
+				<dt>&lt;header&gt;....&lt;/header&gt;</dt>
+				<dd>Definimi i përmbajtjes hyrëse ose linqe të navigimit</dd>
+				<dt>&lt;footer&gt;....&lt;/footer&gt;</dt>
+				<dd>Përmban të dhëna të copyright, informacione për kontakt, dokumente të lidhura me webfaqen tonë...</dd>
+				<dt>&lt;section&gt;....&lt;/section&gt;</dt>
+				<dd>Definimi i një seksioni</dd>
+				<dt>&lt;article&gt;....&lt;/article&gt;</dt>
+				<dd>Definimi i një artikulli</dd>
+				<dt>&lt;aside&gt;....&lt;/aside&gt;</dt>
+				<dd>Definimi i një pjesë në dokument e cila në mënyrë indirekte lidhet me përmbajtjen kryesore të elementit</dd>
+				<dt>&lt;nav&gt;....&lt;/nav&gt;</dt>
+				<dd>Definimi i navigacionit (menyve)</dd>
+				<dt>&lt;div&gt;....&lt;/div&gt;</dt>
+				<dd>Cdo lloj përmbajtjeje mund të vendoset brenda elementit div</dd>
+			</dl>
+
+			<h4>Elementet inline (shfaqen në vendin ku definohen)</h4>
+			<dl>
+				<dt>&lt;em&gt;....&lt;/em&gt;</dt>
+				<dd>Tekst i theksuar</dd>
+				<dt>&lt;strong&gt;....&lt;/strong&gt;</dt>
+				<dd>Tekst i rëndësishëm</dd>
+				<dt>&lt;b&gt;....&lt;/b&gt;</dt>
+				<dd>Tekst në bold (fraza të ndryshme,keywords)</dd>
+				<dt>&lt;i&gt;....&lt;/i&gt;</dt>
+				<dd>Tekst në italic</dd>
+				<dt>&lt;mark&gt;....&lt;/mark&gt;</dt>
+				<dd>Tekst i relevant (highlight)</dd>
+				<dt>&lt;q&gt;....&lt;/q&gt;</dt>
+				<dd>Citate të shkurtra</dd>
+				<dt>&lt;abbr&gt;....&lt;/abbr&gt;</dt>
+				<dd>Definimi i shkurtesave dhe akronimeve</dd>
+				<dt>&lt;span&gt;....&lt;/span&gt;</dt>
+				<dd>Definimi i çfarëdo fjale (pa marrë parasysh përmbajtjen)</dd>
+			</dl>
+		</div>
+		
+		<h1 onclick='display("Vendosjaelinqeve")'>Vendosja e linqeve</h1>
+		<div id="Vendosjaelinqeve" class="korniza">
+		<p>Sintaksa e linkut: </p>
+		<p class="element">&lt;a&gt;...&lt;/a&gt;</p>
+		<p>Elementi &lt;a&gt; së bashku me atributin href krijojnë një link</p>
+		<p>Hapja e linkut mund të bëhet në mënyra të ndryshme, duke shtuar atributin target=" " brenda elementit të linkut</p>
+		<dl>
+			<dt>self</dt>
+			<dd>Hap dokumentin në të njejtën dritare ku është klikuar(default)</dd>
+			<dt>blank</dt>
+			<dd>Hap dokumentin në një dritare të re</dd>
+			<dt>parent</dt>
+			<dd>Hap dokumentin në kornizën prind</dd>
+			<dt>top</dt>
+			<dd>Hap dokumentin në pjesë e plotë të dritares</dd>
+		</dl>
+
+		<p>Kodi për linkun që do të na dërgojë në një ueb faqe tjetër ku kemi më tepër të dhëna për krijimin e linqeve duket kështu </p>
+		<p class="kodi">&lt;a href= "https://www.w3schools.com/ html/html_links.asp"&gt; Klikoni këtu për më shumë informata: &lt;/a&gt;</p>
+		<p>Dalja e kodit: </p>
+		<a href= "https://www.w3schools.com/html/html_links.asp">Klikoni këtu për më shumë informata:</a>
+	</div>
+	
+	<h1 onclick='display("Vendosjaeimazheve")'>Vendosja e imazheve</h1>
+	<div id="Vendosjaeimazheve" class="korniza">	
+		<p>Vendosja e imazheve bëhet me anë të elementit img, i cili është element inline</p>
+		<p>Te elementi img, kemi atributin alt="" ku na mundësohet të japim përshkrim për imazhin që e vendosim</p>
+		<p>Gjatë vendosjes së imazheve duhet të kemi parasysh llojin e imazhit (.svg, .jpg, .png), dhe lokacionin ku gjendet imazhi</p>
+		<p>Kodi për vendosjen e një imazhi do të duket kështu: </p>
+		<p class="kodi">&lt;img src="HTML5logo.svg" alt="Logoja e HTML5" width="200" height="200"&gt;</p>
+		<p>Dalja e kodit:</p>
+		<img src="HTML5logo1.svg" alt="Logoja e HTML5" width="200" height="200">
+		<p>Me anë të atriubuteve width dhe height kemi mundësi që të caktojmë gjerësinë dhe lartësinë e imazhit</p>
+	</div>
+	
+	<h1 onclick='display("tabelat")'>Krijimi i tabelave </h1>
+	<div id="tabelat" class="korniza">	
+		<p>HTML5 mundëson edhe krijimin e tabelave</p>
+		<p class="element">Elementi &lt;table&gt;... &lt;/ta&gt;le&gt; përmban të gjithë përmbajtjen e tabelës</p>
+		<p class="element">Titulli i tabelës &lt;caption&gt;...&lt;/caption&gt;...</p>
+		<p class="element">Rreshti i tabelës: &lt;tr&gt; ... &lt;/tr&gt;</p>
+		<p class="element">Titulli i tabelës: &lt;th&gt; ... &lt;/th&gt;</p>
+		<p class="element">Të dhënat e qeliave të tabelës: &lt;td&gt; ... &lt;/td&gt;</p>
+		<p>Me anë të atributeve rowspan dhe colspan bëhet bashkimi i reshtave dhe kolonave në rast se është e nevojshme</p>
+		<p>Me anë të border bëhet definimi i kornizave të tabelës</p>
+
+		<p>Kodi për krijimin e një tabele: </p>
+		<pre class="kodi">
+&lt;table&gt;
+	&lt;caption&gt;Your content here&lt;/caption&gt;
+	&lt;tr&gt;
+		&lt;th rowspan="2"&gt; &lt;/th&gt;
+		&lt;th colspan="2"&gt; A header &lt;/th&gt;
+		&lt;th rowspan="2"&gt; Header 3 &lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Header 1&lt;/th&gt;
+		&lt;th&gt;Header 2&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Thing A&lt;/th&gt;
+		&lt;td&gt;data A1&lt;/td&gt;
+		&lt;td&gt;Data A2&lt;/td&gt;
+		&lt;td&gt;Data A3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Thing B&lt;/th&gt;
+		&lt;td&gt;data B1&lt;/td&gt;
+		&lt;td&gt;Data B2&lt;/td&gt;
+		&lt;td&gt;Data B3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Thing C&lt;/th&gt;
+		&lt;td&gt;data C1&lt;/td&gt;
+		&lt;td&gt;Data C2&lt;/td&gt;
+		&lt;td&gt;Data C3&lt;/td&gt;
+	&lt;/tr&gt;	
+&lt;/table&gt;
+		</pre>
+
+		<p>Dalja e kodit:</p>
+		<table style="border: 1px solid gray">
+			<caption>Your content here</caption>
+			<tr>
+				<th rowspan="2"> </th>
+				<th colspan="2"> A header</th>
+				<th rowspan="2"> Header 3 </th>
+			</tr>
+			<tr>
+				<th>Header 1</th>
+				<th>Header 2</th>
+			</tr>
+			<tr>
+				<th>Thing A</th>
+				<td>data A1</td>
+				<td>Data A2</td>
+				<td>Data A3</td>
+			</tr>
+			<tr>
+				<th>Thing B</th>
+				<td>data B1</td>
+				<td>Data B2</td>
+				<td>Data B3</td>
+			</tr>
+			<tr>
+				<th>Thing C</th>
+				<td>data C1</td>
+				<td>Data C2</td>
+				<td>Data C3</td>
+			</tr>
+		</table>
+
+		<p>Kornizat e tabelës i kemi definuar në head me anë të kodit: </p>
+		<pre class="element">
+&lt;style&gt;
+	table,td,th {
+	  border: 1px solid gray;}
+&lt;/style&gt;
+		</pre>
+		</div>
+
+		
+		<h1 onclick='display("Vendosjaevideove")'>Vendosja e videove</h1>
+		<div id="Vendosjaevideove" class="korniza">
+		<p>Elementi &lt;video&gt;...&lt;/video&gt; mundëson vendosjen e një video në një webfaqe</p>
+		<p>Kodi për vendosjen e një video-je:</p>
+		<p  class="kodi">&lt;video src="html5video.mp4" width="640" height="480" controls autoplay&gt;&lt;/video&gt;</p>
+
+		<p>Dalja e kodit: </p>
+		<video src="html5video.mp4" width="640" height="480" controls autoplay></video>
+
+		<p>Kodi për vendosjen e një video-je me anë të URL-së</p>
+		<p  class="kodi">&lt;iframe src= "https://www.youtube.com/ embed/OOy764mDtiA" allowfullscreen&gt;&lt;/iframe&gt;</p>
+
+		<p>Dalja e kodit në ekran: </p>
+		<iframe src="https://www.youtube.com/embed/OOy764mDtiA" allowfullscreen></iframe>
+
+		<p>Kodin për vendosjen e videove nga Youtube mund ta gjejmë të gatshëm në pjesë share dhe pastaj embed!</p>
+	</div>
+		
+		<h1 onclick='display("vendosjaeaudiove")'>Vendosja e audiove </h1>
+		
+		<div id="vendosjaeaudiove" class="korniza">
+		<p>Kodi për vendosjen e audios: </p>
+		<p class="element">&lt;audio src="swanlake.mp3" controls preload&gt;&lt;/audio&gt;</p>
+
+		<p>Dalja e kodit në ekran:</p>
+		<audio src="swanlake.mp3" controls preload></audio>
+		</div>
+		
+		<h1 onclick='display("Vendosjaenentitujve")'>Vendosja e nëntitujve në video</h1>
+		
+		<div id="Vendosjaenentitujve" class="korniza">
+			<p>Vendosja e nëntitujve në një video bëhet me anë të një .vtt file, ku për videon në vazhdim do të ishte në këtë mënyrë:</p>
+			<pre class="kodi">
+WEBVTT
+
+
+00:00:10.000-->00:00:13.000
+So you are running a little late today
+
+00:00:13.001-->00:00:16.000
+And you haven't had your fresh cup of coffee yet
+
+00:00:17.000-->00:00:19.000
+No matter the weather or traffic
+
+00:00:19.002-->00:00:22.000
+We deliver fresh coffee and bagels
+
+00:00:25.000-->00:00:27.000
+The java cafe
+			</pre>
+			<p>Vendosja e nëntitujve në video realizohet me anë të kodit:</p>
+			<pre class="kodi"> 
+&lt;video src="videos.mp4" controls&gt;
+&lt;track kind="subtitles" src="subtitles.vtt"&gt;
+&lt;/video&gt;</pre>
+			<video src="videos.mp4" width="640" height="320" controls>
+				<track kind="subtitles" src="subtitles.vtt">
+			</video>
+
+		</div>
+
+		<hr>
+
+		<footer>
+			<a href="../contact.html">Shpërndaje eksperiencën tënde me ne!</a>
+			<h6 onclick="window.print()">Printo faqen</h6>
+			<nav>
+				<p>Kontaktoni me ne!</p>
+				<a href="https://www.facebook.com/kaltrina.ismaili.1/"><img src="../facebook.png" width="35" height="35" alt="logofacebook"></a>
+				<a href="https://www.instagram.com/tinaa_i/"><img src="../instagram.png" width="40" height="40" alt="logoinstagram"></a>
+				<a href="mailto:k.ismaili2001@gmail.com"><img src="../gmail.png" width="40" height="40" alt="logogmail"></a>
+			</nav>
+			
+		</footer>
+
+		<script type="text/javascript">
+			
+			function display(id){
+				
+				const clickedElem = document.getElementById(id);
+				if(clickedElem.style.display ==="block"){
+					const elemsObj = document.getElementsByClassName("korniza");
+					const elems = [...elemsObj];
+					elems.forEach(elem=> elem.style.display="none");
+					return;
+				}
+
+
+				const elemsObj = document.getElementsByClassName("korniza");
+				const elems = [...elemsObj];
+				elems.forEach(elem=> elem.style.display="none");
+				clickedElem.style.display = "block";
+				
+
+			}
+		</script>
+
+		
+
+	</body>
+</html>

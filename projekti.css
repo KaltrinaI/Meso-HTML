@@ -1,0 +1,46 @@
+#div2{
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	grid-gap: 20px;
+}
+
+#permbajtja{
+	display: block;
+	border:solid 3px #f7e4d5;
+	margin: 10px;
+	padding: 25px;
+}
+main{
+	display: block;
+	border:solid 3px #f7e4d5;
+	margin: 10px;
+	padding: 25px;
+	
+}
+aside{
+	display: block;
+	border:solid 3px #f7e4d5;
+	margin: 30px 80px;
+	padding: 40px;
+	font-size: 1.3em;
+	}
+dl dd{
+	font-style: italic;
+}
+dl dt{
+	font-weight: bold;
+}
+span{
+	color: #9c0039;
+	font-size: 1.5em;
+}
+#permbajtja p{
+	font-weight: bold;
+}
+ul li{
+	font-style: italic;
+}
+img{
+	width: 40px;
+	height: 40px;
+}

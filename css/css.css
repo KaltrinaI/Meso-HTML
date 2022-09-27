@@ -1,0 +1,22 @@
+#formatimigradiantit img{
+	width: 400px;
+	height: 300px;
+}
+
+#Formatimiimazheve img{
+	width: 800px;
+	height: 400px;
+}
+#box img{
+	width: 800px;
+	height: 400px;
+}
+
+#border img{
+	width:320px;
+	height:200px;
+}
+
+#img1 a{
+	border: none;
+}

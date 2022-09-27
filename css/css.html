@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS</title>
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<link rel="stylesheet" type="text/css" href="../styles1.css">
+		<link rel="stylesheet" type="text/css" href="animations.css">
+		<link rel="stylesheet" type="text/css" href="../background.css">
+		<link rel="stylesheet" type="text/css" href="../styles.css">
+	</head>
+	<body>
+			<header id="header1">
+			<div id="logo">
+				<svg id="svglogo">
+					<path fill="#00c7ff" style="fill: var(--color1, #00c7ff)" d="M100 50c0 27.614-22.386 50-50 50s-50-22.386-50-50c0-27.614 22.386-50 50-50s50 22.386 50 50z"></path>
+					<path fill="#0093c4" style="fill: var(--color2, #0093c4)" d="M100 50c0-0.007-0-0.014-0-0.021l-23.412-23.413-56.958 46.868 26.41 26.41c1.307 0.103 2.628 0.156 3.961 0.156 27.614 0 50-22.386 50-50z"></path>
+					<path fill="#9abadb" style="fill: var(--color3, #9abadb)" d="M76.587 26.566h-26.587l-2.375 41.675 28.962-2.375z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M23.413 26.566v39.3l26.587 2.375v-41.675z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M80.371 65.866h-30.371l-2.375 3.784 2.375 3.784h30.371z"></path>
+					<path fill="#f5f5ff" style="fill: var(--color5, #f5f5ff)" d="M19.629 65.867h30.371v7.568h-30.371v-7.568z"></path>
+					<path fill="#294b6e" style="fill: var(--color6, #294b6e)" d="M73.028 30.125h-23.028l-2.375 16.091 2.375 16.091h23.028z"></path>
+					<path fill="#6283a3" style="fill: var(--color7, #6283a3)" d="M26.973 30.125h23.027v32.182h-23.027v-32.182z"></path>
+					<path fill="#f5f5ff" style="fill: var(--color5, #f5f5ff)" d="M40.845 55.645l-9.429-9.429 9.429-9.429 2.517 2.517-6.912 6.912 6.912 6.912z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M59.155 55.645l-2.517-2.517 6.912-6.912-6.912-6.912 2.517-2.517 9.429 9.429z"></path>
+					<path fill="#d1e8ff" style="fill: var(--color4, #d1e8ff)" d="M49.55 57.598l-3.491-0.694 4.389-22.065 3.491 0.694-4.389 22.065z"></path>
+				</svg>
+				<a href="../projekti.html"><h1 id="emri">Web-design</h1></a>
+			</div>
+			<div id="menu">
+				<nav id="navigim">
+					<ul>
+						<li><a href="../html5/html5.html">HTML5</a></li>
+						<li><a href="css.html">CSS</a></li>
+						<li><a href="../Javascript/javas.html">JavaScript</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<hr>	
+		<h1 onclick='display("HyrjeneCss")'>Hyrje në CSS</h1>
+		<div id="HyrjeneCss" class="korniza">
+		<p>CSS qëndron për Cascading Style Sheets</p>
+		<p>CSS përshkruan se si elementet HTML do të shfaqen në ekran ose në media të tjera</p>
+		<p>Rregullat në CSS mund të definohen në 3 mënyra: </p>
+		<dl>
+			<dt>Inline styles</dt>
+			<dd>Definohet brenda në body, brenda elementit që dëshirojmë të ia ndërrojmë stilin</dd>
+			<dt>Embedded style sheets</dt>
+			<dd>Definohen te pjesa e head, dhe mundet që më tepër elementeve të njejta tu japim stile të njejta</dd>
+			<dt>External style sheets</dt>
+			<dd>Është një fajll i jashtëm i cili mbaron me .css, ku janë definuar rregulla të CSS për stilin e elementeve</dd>
+		</dl>
+
+		<p>Ekzistojnë website të ndryshme që ofrojnë template të gatashme me rregulla të definuara në CSS, njëra prej tyre është: <a href="https://www.free-css.com/free-css-templates">https://www.free-css.com/free-css-templates</a></p>
+		</div>
+
+		<h1 onclick='display("Formatimitekstit")'>Formatimi i tekstit</h1>
+		<div id="Formatimitekstit" class="korniza">
+		<p>Rregullat që definohen në CSS na ndihmojnë që të ndryshojmë stilin e tekstit, ashtu që dalja e tekstit në ekran të bëhet në mënyrën që ne dëshirojmë.</p>
+		<p>Disa nga mundsësitë që na ofron CSS janë: </p>
+		<dl>
+			<dt>font-family</dt>
+			<dd>Mundëson definimin e llojit të fondit që dëshirojmë të përdorim, siç janë fontet: serif, sans-serif, arial dhe shumë të tjera</dd>
+			<dt>font-size</dt>
+			<dd>Mundëson definimin e madhësisë së shkronjave, ku mund të definohet si 1.5em, 150%, larger etj. </dd>
+			<dt>font-weight</dt>
+			<dd>Mundëson definimin e peshës së shkronjave në bold, bolder, lighter, 800 etj</dd>
+			<dt>font-style</dt>
+			<dd>Mundëson definimin e stilit të shkronjave në italic apo oblique</dd>
+			<dt>font-variant</dt>
+			<dd>Mundëson definimin e variantit të shkronjave, normal ashtu siç e kemi shënuar, apo small-caps të gjithë shkronja të vogla</dd>
+			<dt>font-stretch</dt>
+			<dd>Mundëson të definojmë shtrirjen e shkronjave, ku mund të mer vlera si ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded</dd>
+			<dt>color</dt>
+			<dd>Mundëson ndryshimin e ngjyrës së teksit, si në blue, #FFFFFF etj.</dd>
+			<dt>text-indent</dt>
+			<dd>Mundëson të nxjerrim tekstin në kryeresht, mund të definohet si 2em, 25%, -35px etj.</dd>
+			<dt>text-align</dt>
+			<dd>Mundëson të definojmë shtrirjen horizontale të tekstit, edhe atë në left, right, center, start, end, justify</dd>
+			<dt>text-decoration</dt>
+			<dd>Shfrytëzohet për dekorimet dhe nënvizime të tekstit, si underline, overline, line-through etj.</dd>
+			<dt>text-transfrom</dt>
+			<dd>Mundëson transformimin e tekstit në capitalize (shkronjat e para të çdo fjale të jenë të mëdhaja), lowercase(të gjithë shkronjat të vogla), uppercase(të gjithë shkronjat e mëdha) etj.</dd>
+		</dl>
+		</div>
+
+		<h1 onclick='display("Formatimigradiantit")'>Formatimi i gradiantit</h1>
+		<div id="Formatimigradiantit" class="korniza">
+		<p>Kemi disa lloje te gradiantit: </p>
+		<ul class="lista">
+			<li>Gradienti linear</li>
+			<li>Gradienti radial</li>
+			<li>Gradienti përsëritës</li>
+		</ul>
+
+		<h3>Definimi i gradientit linear: </h3>
+		<p class="element">background-image: linear-gradient(180deg, red, black);</p>
+		<p>Dalja e kodit: </p><img src="redblack.png" alt="gradienti linear">
+
+		<p class="element">background-image: linear-gradient(90deg, white, orange 25%, red);</p>
+		<p>Dalja e kodit: </p><img src="whitered.png" alt="gradienti linear" >
+
+		<p class="element">background-image: linear-gradient(50deg, yellow, pink, red, purple, blue);</p>
+		<p>Dalja e kodit: </p><img src="yellowblue.png" alt="gradienti linear" >
+
+		<h3>Definimi i gradientit radial: </h3>
+		<p class="element">background-image: radial-gradient(white, green);</p>
+		<p>Dalja e kodit: </p><img src="whitegreen.png" alt="gradienti radial">
+
+		<p class="kodi">background-image: radial-gradient(farthest-side at right bottom, white, blue 50%, purple);</p>
+		<p>Dalja e kodit: </p> <img src="whitepurple.png" alt="gradienti radial">
+
+		<h3>Definimi i gradientit përsëritës</h3>
+
+		<p class="kodi">background: repeating-linear-gradient(45deg, purple, white 12px, red 12px, pink 24px);</p>
+		<p>Dalja e kodit: </p> <img src="repeat.png" alt="prapavi përsëritëse">
+		</div>
+		
+		<h1 onclick='display("Formatimiimazheve")'>Formatimi i imazheve</h1>
+		<div id="Formatimiimazheve" class="korniza">
+			
+		<p>Rregullat që definohen në CSS na mundësojnë që të bëjmë fomratimin e imazheve sipas dëshirës tonë</p>
+		<p>Disa nga atributet që mund ti përdorim janë: </p>
+		<dl>
+			<dt>background-image</dt>
+			<dd>Vendosja e imazhit si prapavi</dd>
+			<dt>background-repeat</dt>
+			<dd>Përsërtija e imazhit në prapavi</dd>
+			<dt>background-position</dt>
+			<dd>Pozicionimi i prapavisë</dd>
+			<dt>background-origin</dt>
+			<dd>Origjina e pozicionit të imazhit</dd>
+			<dt>background-attachment</dt>
+			<dd>Bashkangjitja e imazheve</dd>
+			<dt>background-size</dt>
+			<dd>Madhësia e prapavisë</dd>
+		</dl>
+		<p>Të gjithë këto veti mundemi ti grumbullojmë me atributin background: dhe aty ti shënojmë stilet që dëshirojmë ti përdorim në prapavi!</p>
+
+		<p class="element">	background: url(background.png) space fixed;</p>
+		<p>Nëse këto rregulla i definojmë për elementin body, në një uebfaqe të zbrazët, ajo do të dukej në këtë mënyrë!</p>
+		<img src="background1.png" alt="prapavi me anë të një imazhi" >
+		</div>
+
+		<h1 onclick='display("Formatimikutive")'>Elementi kuti(box)</h1>
+		<div id="Formatimikutive" class="korniza">
+			
+		<p>Elementi kuti(box) në CSS na mundëson që te elementet e HTML5 ta vendosim në një kuti të clën ne e definojmë. Elementi kuti përbëhet nga 4 pjesë, edhe atë margjinat, korniza, padding-u dhe përmbajtja.</p>
+		<p id="box"><img src="box.png" alt="elementet e boxit"></p>
+		<dl>
+			<dt>Përmbajtja e kutisë </dt>
+			<dd>Hapësira ku shfaqe teksti dhe fotografitë</dd>
+			<dt>Padding-u</dt>
+			<dd>Paddingu është transparent, dhe cakton se sa do të jetë hapsira ndërmjet përmbajtjes së kutisë dhe kornizave së kutisë</dd>
+			<dt>Kornizat</dt>
+			<dd>Korniza që e rrethon pjesën e përmbajtjes dhe padding-ut </dd>
+			<dt>Margjinat</dt>
+			<dd>Edhe margjinat janë transparente, dhe definojnë se sa hapsirë do të ketë ndërmjet elementit box që e kemi definuar me ndonjë element tjetër</dd>
+		</dl>
+		<p>Për një element div të krijuar në body, mund të definojmë disa stile si në vijim: </p>
+		<pre class="element">
+div{
+  background-color: beige;
+  width: 320px;
+  height: 200px;
+  padding: 10px;
+  border: 5px solid purple;
+  margin: 10%;
+  box-shadow: 5px 5px 3px gray;
+}
+		</pre>
+
+		<p>Dalja e kodit:</p>
+		<p id="border"><img src="border.png" alt="krijimi i një boxi"></p>
+		
+		</div>
+
+		<h1 onclick='display("Levizjet")'>Lëvizjet dhe pozicionimi</h1>
+		<div id="Levizjet" class="korniza">	
+		<p>Vendosja e elementeve në html5 bëhet me rradhë, në atë mënyrë që e kemi shënuar kodin, mirëpo me anë të CSS, kemi mundësinë që këto elemente ti lëvizmim dhe ti pozicionojmë në ndonjë vend tjetër, në atë mënyrë që të përshtaten me elementet tjera në uebfaqe</p>
+		<p>Me anë të atributit float mund të pozicionojmë elementet në të djathtë apo në të majtë</p>
+		<p>Me anë të atributit clear mund ta bëjmë pastrimin e elementeve të lëvizshme, dhe atë në anën e majtë, në të djathtën apo në të dyja anët.</p>
+		<p>Atributi shape-outside na mundëson mbështjelljen e tekstit në forma të ndryshme, si circle, ellipse, polygon</p>
+		<p>Pozicionimin e elementeve e bëjmë me anë të atributit position, i cili mund të mer vlerat static,relative,absolute dhe fixed</p>
+
+		<p>Përdorimi i këtyre atributeve në një ueb faqe, rregullat të definuara në CSS</p>
+		<pre class="element">
+div,main{
+ 	box-sizing: border-box;
+  	border: double 4px #021a54;
+  	padding: 2px;
+  	border-radius: 25px;
+  	margin: 5%;
+}
+#a img{
+  float: left;
+  margin: .5em;
+  shape-outside: circle(115px);
+
+}
+#b img{
+ 
+  float: left;
+  margin: .5em;
+  shape-outside: circle(110px);
+  
+}
+#c img{
+    
+  float: left;
+  margin: .5em;
+  shape-outside: circle(100px);
+  
+}
+h2{
+  clear: left;
+  text-align: center;
+  margin:2em;
+  font-size: 1.5em;
+  color:white;
+}
+#foto{
+  position: fixed;
+  top: 30px;
+  left: 50px;
+}
+        
+		</pre>
+		<p>Ekzekutimin e këtyre rregullave në një uebfaqe mund ta shikoni duke klikuar <a href="ushtrimi1/index.html"> këtu</a></p>
+		</div>
+		
+		<h1 onclick='display("flexboxgrid")'>Flexbox dhe grid</h1>
+		<div id="flexboxgrid" class="korniza">
+		<h2>Flexbox</h2>
+		<p>Elementi flexbox mundëson që elementet e uebfaqes tonë të jenë fleksibile dhe të përshtaten me viewport-in me të cilën hapen</p>
+		<p>Një element bëhet fleksibil me deklarimin e atributit display:flex</p>
+		<p>Pasiqë një element e kemi deklaruar me flex, gjithashtu mund ti përdorim edhe atributet flex-direction, flex-wrap, flex-flow, justify-content, align-items</p>
+
+		<dl>
+			<dt>flex-direction</dt>
+			<dd>Përcakton drejtimin e elementeve fleksibile në një konteiner fleksibil</dd>
+			<dt>flex-wrap</dt>
+			<dd>Përcakton nëse elementet flex kanë hapsirë të mjaftueshme që të paraqiten në një vijë, apo duhet që elementet të kalojnë në vijë tjetër </dd>
+			<dt>flex-flow</dt>
+			<dd>Një veti për definimin e flex-direction dhe flex-wrap</dd>
+			<dt>justify-content</dt>
+			<dd>Në mënyrë horizontale i rradhit elementet flex, kur elementet nuk e përdorin të gjithë haspirën në disponim që gjendet në boshtin x</dd>
+			<dt>align-items</dt>
+			<dd>Në mënyrë vertikale i rradhit elementet flex, kur elementet nuk e përdorin të gjithë haspirën në disponim që gjendet në boshtin y </dd>
+		</dl>
+
+		<p>Disa veti të elementeve flex janë: </p>
+		<ul class="lista">
+			<li>order</li>
+			<li>flex-grow</li>
+			<li>flex-shrink</li>
+			<li>flex-basis</li>
+			<li>flex</li>
+			<li>align-self</li>
+		</ul>
+
+		<h2>Grid</h2>
+		<p>Elementi grid me anë të rreshtave dhe kolonave e bën më të lehtë pozicionimin e elementeve pa mos përdorur float dhe positon, dhe definohet me display:grid;</p>
+		<p>Vlerat që mund ti marrë Gridi janë:</p>
+		<ul class="lista">
+			<li>column-gap</li>
+			<li>gap</li>
+			<li>grid</li>
+			<li>grid-area</li>
+			<li>grid-auto-columns</li>
+			<li>grid-auto-flow</li>
+			<li>grid-auto-rows</li>
+			<li>grid-column</li>
+			<li>grid-column-end</li>
+			<li>grid-column-start</li>
+			<li>grid-gap</li>
+			<li>grid-row</li>
+			<li>grid-row-end</li>
+			<li>grid-row-gap</li>
+			<li>grid-row-start</li>
+			<li>grid-template</li>
+			<li>grid-template-areas</li>
+			<li>grid-template-columns</li>
+			<li>grid-template-rows</li>
+			<li>row-gap</li>
+		</ul>
+		</div>
+		<h1 onclick='display("Dizajni")'>Dizajni i përgjegjshëm i uebit</h1>
+		<div id="Dizajni" class="korniza">
+			<p>Dizjan i përgjegjshë do të thotë uebfaqe që përshtaten në display të të gjitha madhësive, pa marrë parasysh se në cilën viewport hapen</p>
+			<p>Ekzistojnë 3 komponenta kryesore për dizajnimin e një uebi të përgjegjshëm</p>
+			<dl>
+				<dt>Grid fleksibil</dt>
+				<dd>Në vend që të qëndrojnë në një gjerësi statike, uebfaqet e përgjegjshme përdorin metoda që i lejojnë ato të zvogëlohen ose të zmadhohen në hapësirën e shfletuesit të disponueshëm</dd>
+				<dt>Imazhe fleksibile</dt>
+				<dd>Imazhet dhe elementet tjera mulitmediale (embedded) duhet të jenë në gjendje për t’iu përshtatur elementeve të tyre që p[rmbajnë.</dd>
+				<dt>Pyetjet e multimedias në CSS</dt>
+				<dd> Pyetjet për multimedian na japin një mënyrë për të ofruar grupe rregullash vetëm te pajisjet që plotësojnëdisa kritere, të tilla si gjerësia dhe orientimi.</dd>
+			</dl>
+		</div>
+		<h1 onclick='display("transicionet")'>Tranzicionet, transformimet dhe animacionet</h1>
+		<div id="transicionet" class="korniza">
+			<h2>Tranzicionet</h2>
+		<p>Vetitë e tranzicioneve</p>
+		<dl>
+			<dt>transition-property</dt>
+			<dd>Definimi i një tranzicioni</dd>
+			<dt>tansition-duration</dt>
+			<dd>Kohëzgjatja e tranzicionit</dd>
+			<dt>transition-timing-function</dt>
+			<dd>Funksionet e kohës së tranzicionit</dd>
+			<dt>transition-delay</dt>
+			<dd>Vendosja e vonesës për kryerjen e tranzicionit</dd>
+		</dl>
+		
+		<p>Tranzicion për një element div bosh të definuar në body: </p>
+		<pre class="element">
+div {
+ width: 100px;
+ height: 100px;
+ background: purple;
+ transition-property: width;
+ transition-duration: 2s;
+ transition-timing-function:linear;
+ transition-delay: 1s;
+}
+div:hover {
+  width: 300px;
+}
+		</pre>
+		<p>Ekzekutimi i kodit:</p>
+		<div id="divt"></div>
+
+		<h2>Transformimet</h2>
+		<p>Transformimet e elementeve bëhen me anë të atributit transform, mirëpo ka më tepër mundësi se si mund të bëhet transformimi i një elementi: </p>
+		<ul class="lista">
+			<li>Transformimi i këndit (rotate)</li>
+			<li>Transformimi i origjinës (origin)</li>
+			<li>Transformimi i pozicionit (translate)</li>
+			<li>Transformimi i madhësisë(scale)</li>
+			<li>Transformimi i pjerrtësisë(skew)</li>
+		</ul>
+
+		<p>Krijimi i transformimit për një imazh</p>
+		<pre class="kodi">
+a:hover #img, a:focus #img{
+  transform: rotate(15deg) 
+             translate(50px, 20px) 
+  	     scale(.75) 
+  	     skew(15deg);
+  transform-origin: center top;
+}</pre>
+		<p>Ekzekutimi i kodit: (vendosni mouse-in mbi fotografinë)</p>
+		<p id="img1"><a href=""><img id="img" src="image.png" width="250" height="300" alt=""></a></p>
+		<div id="animationdiv">
+			<h2>Animacionet</h2>
+			<p>Vetië e animacioneve: </p>
+			<ul class="lista">
+				<li>@keyframes</li>	
+				<li>animation</li>
+				<li>animation-delay</li>
+				<li>animation-direction</li>
+				<li>animation-duration</li>
+				<li>animation-fill-mode</li>
+				<li>animation-iteration-count</li>	
+				<li>animation-name</li>
+				<li>animation-play-state</li>	
+				<li>animation-timing-function</li>
+			</ul>
+
+			<p>Definimi i rregullave për krijimin e një animacioni: </p>
+			<pre class="kodi">
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: katrori;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+
+@keyframes katrori {
+ 0% {background-color:white;left:0px;top:0px;}
+ 25%{background-color:purple;left:100px;top:0px;}
+ 50%{background-color:yellow;left:100px;top:100px;}
+ 75%{background-color:purple;left:0px;top:100px;}
+100%{background-color:white;left:0px;top:0px;}
+}
+			</pre>
+			</div>
+				<div id="animation"></div>
+		</div>
+		<hr>
+
+		<footer>
+			<a href="../contact.html">Shpërndaje eksperiencën tënde me ne!</a>
+			<h6 onclick="window.print()">Printo faqen</h6>
+			<nav>
+				<p>Kontaktoni me ne!</p>
+				<a href="https://www.facebook.com/kaltrina.ismaili.1/"><img src="../facebook.png" width="35" height="35" alt="facebook logo"></a>
+				<a href="https://www.instagram.com/tinaa_i/"><img src="../instagram.png" width="40" height="40" alt="instagram logo"></a>
+				<a href="mailto:k.ismaili2001@gmail.com"><img src="../gmail.png" width="40" height="40" alt="gmail logo"></a>
+			</nav>
+		</footer>
+
+		<script type="text/javascript">
+			
+			function display(id){
+				
+				const clickedElem = document.getElementById(id);
+				if(clickedElem.style.display ==="block"){
+					const elemsObj = document.getElementsByClassName("korniza");
+					const elems = [...elemsObj];
+					elems.forEach(elem=> elem.style.display="none");
+					return;
+				}
+
+
+				const elemsObj = document.getElementsByClassName("korniza");
+				const elems = [...elemsObj];
+				elems.forEach(elem=> elem.style.display="none");
+				clickedElem.style.display = "block";
+
+			}
+		</script>
+	</body>
+</html>

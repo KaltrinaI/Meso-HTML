@@ -1,0 +1,42 @@
+.korniza{
+	display: none;
+	border:solid 3px #f7e4d5;
+	margin: 10px;
+	padding: 25px;
+	padding-bottom: 100px;
+}
+h1{
+	color:  #9c0039;
+}
+h1:hover { color: #ffffff }
+.kodi{
+	width:60%;
+	box-sizing: content-box;
+	border-left: solid 4px #060075;
+	background-color:#ecebff;
+	padding: 1.5em;
+}
+
+.element{
+	width: 40%;
+	box-sizing: content-box;
+	border-left: solid 4px #060075;
+	background-color:#ecebff;
+	padding: 1.5em;
+}
+dl dt{
+	width: 40%;
+	box-sizing: content-box;
+	border-left: solid 4px #060075;
+	background-color:#ecebff;
+	padding: 1.5em;
+	margin:1.5px;
+}
+dl dd{
+	font-size: 1.2em;
+	font-style:italic;
+
+}
+.lista li{
+	color: #ecebff;	
+}
